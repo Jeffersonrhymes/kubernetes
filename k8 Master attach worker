@@ -1,0 +1,4 @@
+#This is to define what CIDR Range port to creation of out kubernetes cluster.
+#Run only in MASTER NODE 
+
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
