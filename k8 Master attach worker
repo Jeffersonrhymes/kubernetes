@@ -1,4 +1,9 @@
 #This is to define what CIDR Range port to creation of out kubernetes cluster.
-#Run only in MASTER NODE 
+#This wlll create a join command to make any virtual machine to become a worker node
+#Run only in MASTER NODE
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+
+ #copy the Token and paste in the worke nodes to connect
+# Example of token : kubeadm join 10.0.1.168:6443 --token m9u0ws.r0wy6q22lpyig2cn \
+        --discovery-token-ca-cert-hash sha256:023d3c0f1e9e092f55c300e30815f223dc01b78dc65d9059ce8d0cf82280c5f2
