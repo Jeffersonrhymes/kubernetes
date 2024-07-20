@@ -15,4 +15,5 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt update
 
 #The below command is to install kubernetes command line and kublet for the creation of pods.
+#Run on all vm's
 sudo apt install -y kubeadm=1.30.0-1.1 kubelet=1.30.0-1.1 kubectl=1.30.0-1.1
